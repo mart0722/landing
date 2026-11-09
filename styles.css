@@ -771,10 +771,10 @@ button {
   }
 
   .car-stage {
-    width: 150%;
+    width: 220%;
     max-width: none;
-    margin-right: -25%;
-    margin-left: -25%;
+    margin-right: -60%;
+    margin-left: -60%;
   }
 
   .slider-arrow {
