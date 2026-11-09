@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EX2ToolsIV — локальный инструмент для Geely EX2</title>
+  <meta name="description" content="EX2ToolsIV — бесплатный офлайн-инструмент для головного устройства Geely EX2: телеметрия, климат, голос, виджеты, звуки и сервисный режим. Без облака и автообновлений.">
+  <meta name="theme-color" content="#070b10">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="EX2ToolsIV — на главную">
+        <img class="brand-logo" src="logo.png" alt="">
+        <span class="brand-text">
+          <span class="brand-name">EX2ToolsIV</span>
+          <span class="brand-tagline">Локальный инструмент для Geely EX2</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Разделы сайта">
+        <a href="#features">Возможности</a>
+        <a href="#screens">Скриншоты</a>
+        <a href="#offline">Офлайн</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <div class="container">
+        <div class="eyebrow"><span></span> OPEN SOURCE · БЕСПЛАТНО · БЕЗ ОБЛАКА</div>
+        <h1>Всё нужное для ГУ.<br><em>Без интернета и автообновлений.</em></h1>
+        <p class="lead">
+          EX2ToolsIV — локальный набор инструментов для Geely EX2:
+          телеметрия, климат, голосовое управление, виджеты, звуки,
+          работа с приложениями и сервисный режим.
+        </p>
+        <div class="badges" aria-label="Ключевые свойства">
+          <span class="badge">Бесплатно</span>
+          <span class="badge">Полностью офлайн</span>
+          <span class="badge">Без телеметрии</span>
+          <span class="badge">Без автообновлений</span>
+          <span class="badge">Открытый код</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="car-section" id="screens" aria-labelledby="screens-title">
+      <h2 class="sr-only" id="screens-title">Скриншоты приложения</h2>
+      <div class="car-stage">
+        <img class="car" src="123.png" alt="Передняя панель Geely EX2 с экраном головного устройства" draggable="false">
+
+        <div class="screen-frame">
+          <div class="slider" id="hero-slider" aria-roledescription="carousel" aria-label="Скриншоты EX2ToolsIV">
+            <div class="slides">
+              <figure class="slide is-active" aria-hidden="false">
+                <img src="screenshots/1.jpg" alt="Экран «Обзор»: батарея, запас хода, климат и пробег" fetchpriority="high">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/2.jpg" alt="Настройки: тема, рекуперация и климат" loading="lazy">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/3.jpg" alt="Настройки темы и оформления" loading="lazy">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/4.jpg" alt="Настройки: Wi-Fi, заряд, обогревы и яркость" loading="lazy">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/5.jpg" alt="Голосовое управление: команды и микрофон" loading="lazy">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/6.jpg" alt="Виджеты: размеры и прозрачность" loading="lazy">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/7.jpg" alt="Виджет часов: время, дата и шрифт" loading="lazy">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/8.jpg" alt="Звуки: выбор встроенного звука" loading="lazy">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/9.jpg" alt="Виджеты: список и настройка" loading="lazy">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/10.jpg" alt="Установка приложений через USB и QR" loading="lazy">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/11.jpg" alt="Установка приложений по QR-коду" loading="lazy">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="screenshots/12.jpg" alt="Приложения: список, права и удаление" loading="lazy">
+              </figure>
+            </div>
+
+            <button class="slider-arrow prev" type="button" aria-label="Предыдущий скриншот">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+            </button>
+            <button class="slider-arrow next" type="button" aria-label="Следующий скриншот">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+            </button>
+
+            <div class="slider-counter" aria-live="polite">1 / 12</div>
+            <div class="slider-dots" role="tablist" aria-label="Выбор скриншота">
+              <button class="dot is-active" type="button" role="tab" aria-selected="true" aria-label="Скриншот 1"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 2"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 3"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 4"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 5"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 6"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 7"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 8"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 9"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 10"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 11"></button>
+              <button class="dot" type="button" role="tab" aria-selected="false" aria-label="Скриншот 12"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> ВОЗМОЖНОСТИ</div>
+          <h2>Один APK — весь рабочий стол</h2>
+          <p>Всё, что нужно для повседневной работы с ГУ, собрано в одном приложении.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-index">01</span>
+            <h3>Обзор</h3>
+            <p>Батарея, запас хода, 12 В, температура, климат, расход и пробег.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">02</span>
+            <h3>Климат и режимы</h3>
+            <p>Температура, обдув, вентилятор, рециркуляция, обогрев стёкол, сидений и руля. Режим езды и рекуперации.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">03</span>
+            <h3>Голос</h3>
+            <p>Офлайн-распознавание, активация по кнопке на руле или «Слушай Джили», команды для климата, окон, звука и приложений. Поддерживает добавление своих команд</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">04</span>
+            <h3>Виджеты</h3>
+            <p>12 виджетов, отдельный размер каждого, общая прозрачность, часы с датой и выбором шрифта.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">05</span>
+            <h3>Звуки</h3>
+            <p>10 встроенных звуков блокировки автомобиля и возможность загрузить свой.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">06</span>
+            <h3>Приложения и сервис</h3>
+            <p>Установка APK, разрешения, установка по QR, скрытие приложений. Сервисный режим и восстановление.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offline-section" id="offline">
+      <div class="container offline-grid">
+        <div>
+          <div class="eyebrow"><span></span> ПОЧЕМУ ОФЛАЙН</div>
+          <h2>Никакого удалённого кода</h2>
+          <p class="lead">
+            Приложение не обращается к внешним серверам, не проверяет обновления
+            и не загружает исполняемый код. Обновление — только вручную:
+            собрать или скачать APK, проверить хэш и установить.
+          </p>
+        </div>
+        <div class="offline-card">
+          <ul>
+            <li><strong>Нет автообновлений.</strong> Приложение не может само подменить свой код.</li>
+            <li><strong>Нет телеметрии.</strong> Логи, настройки и скриншоты остаются на устройстве.</li>
+            <li><strong>Нет облака.</strong> Все функции работают локально.</li>
+            <li><strong>Нет динамической загрузки.</strong> В APK нет плагинов и скрытых загрузчиков.</li>
+            <li><strong>Локальная сеть — только по действию.</strong> QR-сервер и локальный ADB запускаются пользователем.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>EX2ToolsIV · локальный инструмент для Geely EX2</span>
+      <span>Open source · MIT · без облака и автообновлений</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
