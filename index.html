@@ -46,14 +46,18 @@
           <span class="badge">Открытый код</span>
         </div>
         <div class="hero-actions">
-          <a class="button button-primary" href="https://github.com/mart0722/EX2ToolsIV/releases/download/v1.8.33/EX2ToolsIV-1.8.33.apk" aria-label="Скачать APK EX2ToolsIV 1.8.33">
+          <a class="button button-primary" href="https://github.com/mart0722/EX2ToolsIV/releases/download/v2.0.8/EX2ToolsIV-2.0.8.apk" aria-label="Скачать APK EX2ToolsIV 2.0.8">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
             Скачать APK
           </a>
+          <button class="button button-ghost" type="button" data-open-modal="usb-modal" aria-haspopup="dialog">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v4h6V3M9 7l-1 4v6a4 4 0 0 0 8 0v-6l-1-4M12 11v3"/></svg>
+            Подготовка флешки
+          </button>
           <a class="button button-ghost" href="https://github.com/mart0722/EX2ToolsIV" target="_blank" rel="noopener">
             Исходный код
           </a>
-          <span class="download-note">Версия 1.8.33 · 70 МБ</span>
+          <span class="download-note">Версия 2.0.8 · 70 МБ</span>
         </div>
       </div>
     </section>
@@ -204,6 +208,80 @@
       <span>Open source · MIT · без облака и автообновлений</span>
     </div>
   </footer>
+
+  <div class="modal" id="usb-modal" role="dialog" aria-modal="true" aria-labelledby="usb-modal-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="document">
+      <div class="modal-head">
+        <div>
+          <div class="eyebrow"><span></span> ЧИСТАЯ УСТАНОВКА</div>
+          <h2 id="usb-modal-title">Подготовка флешки</h2>
+        </div>
+        <button class="modal-close" type="button" aria-label="Закрыть окно" data-close-modal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-video">
+          <video id="usb-video" controls playsinline preload="metadata" src="usb-prep.mp4">
+            Ваш браузер не поддерживает видео.
+          </video>
+        </div>
+
+        <p class="modal-lead">
+          Нужна для установки на ГУ, где приложения ещё нет, — например, после
+          сброса к заводским настройкам. Пакет ставится штатным обновлением,
+          данные не стираются.
+        </p>
+
+        <h3>1. Записать флешку</h3>
+        <ol class="steps">
+          <li>Скачайте <a href="usb-install.zip" download>usb-install.zip</a> и распакуйте в любую папку.</li>
+          <li>Вставьте флешку (до 64 ГБ) и запустите <strong>write-usb.bat</strong>, подтвердите права администратора.</li>
+          <li>Введите букву диска и слово <strong>FORMAT</strong> — все данные на флешке будут удалены.</li>
+          <li>Дождитесь «ВСЕ ПРОВЕРКИ ПРОЙДЕНЫ» и извлеките флешку.</li>
+        </ol>
+
+        <h3>2. Установить в машине</h3>
+        <ol class="steps">
+          <li>Вставьте флешку, дождитесь сообщения «USB подключён».</li>
+          <li>Приложение «Телефон» → секретный код → <strong>U盘升级</strong>.</li>
+          <li>Дождитесь строки <code>[EX2] OK: package registered, reboot required</code>.</li>
+          <li>Удерживайте кнопку «предыдущий трек» 15 секунд.</li>
+        </ol>
+        <p class="modal-note">
+          Строка <code>Installation aborted</code> в конце — норма, так задумано.
+        </p>
+
+        <h3>3. Секретный код</h3>
+        <p>
+          Код зависит от даты и времени ГУ: <code>#*</code> + (месяц + 10) +
+          день + час в 12-часовом формате.
+        </p>
+        <div class="code-example">
+          <div class="code-example-title">Пример: 18 ноября 2026, 14:30</div>
+          <ul>
+            <li>месяц: 11 + 10 = <strong>21</strong></li>
+            <li>день: <strong>18</strong></li>
+            <li>час: 14:00 → <strong>02</strong></li>
+          </ul>
+          <div class="code-value">#*211802</div>
+        </div>
+        <p class="code-live">
+          Сейчас по времени вашего компьютера: <strong id="usb-code-live">—</strong>
+        </p>
+      </div>
+
+      <div class="modal-actions">
+        <a class="button button-primary" href="usb-install.zip" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+          Скачать архив
+        </a>
+        <button class="button button-ghost" type="button" data-close-modal>Закрыть</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

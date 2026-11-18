@@ -118,3 +118,64 @@
   show(0);
   start();
 })();
+
+/* USB install modal */
+
+(() => {
+  const modal = document.getElementById("usb-modal");
+  if (!modal) return;
+
+  const video = document.getElementById("usb-video");
+  const live = document.getElementById("usb-code-live");
+  const pad2 = (value) => String(value).padStart(2, "0");
+
+  function codeFor(date) {
+    const month = date.getMonth() + 1;
+    const hour12 = date.getHours() % 12 || 12;
+    return `#*${month + 10}${pad2(date.getDate())}${pad2(hour12)}`;
+  }
+
+  function update() {
+    if (live) live.textContent = codeFor(new Date());
+  }
+
+  let lastFocus = null;
+
+  function open() {
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    update();
+    const button = modal.querySelector(".modal-close");
+    if (button) button.focus();
+  }
+
+  function close() {
+    if (modal.hidden) return;
+    modal.hidden = true;
+    document.body.classList.remove("modal-open");
+    if (video) video.pause();
+    if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
+  }
+
+  document.querySelectorAll('[data-open-modal="usb-modal"]').forEach((el) => {
+    el.addEventListener("click", (event) => {
+      event.preventDefault();
+      open();
+    });
+  });
+
+  modal.querySelectorAll("[data-close-modal]").forEach((el) => {
+    el.addEventListener("click", close);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") close();
+  });
+
+  window.setInterval(() => {
+    if (!modal.hidden) update();
+  }, 30000);
+
+  update();
+})();

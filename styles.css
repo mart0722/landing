@@ -852,3 +852,210 @@ button {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* USB install modal */
+
+body.modal-open { overflow: hidden; }
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal[hidden] { display: none; }
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 7, 12, 0.74);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.modal-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(780px, 100%);
+  max-height: 92vh;
+  overflow: hidden;
+  padding: 26px;
+  border: 1px solid var(--line-strong);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(16, 24, 35, 0.99), rgba(9, 14, 21, 0.99));
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.65);
+}
+
+.modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.modal-head h2 {
+  margin: 8px 0 0;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+}
+
+.modal-close {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted-strong);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+}
+
+.modal-close svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.modal-head { flex: 0 0 auto; }
+
+.modal-body {
+  margin-top: 16px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.modal-video {
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+}
+
+.modal-video video {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  height: auto;
+  object-fit: contain;
+  background: #000;
+}
+
+.modal-lead {
+  margin: 18px 0 0;
+  color: var(--muted-strong);
+  line-height: 1.65;
+}
+
+.modal-body h3 {
+  margin: 26px 0 0;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+}
+
+.steps {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: var(--muted-strong);
+  line-height: 1.65;
+}
+
+.steps li { margin-bottom: 7px; }
+
+.steps strong,
+.modal-body strong { color: var(--text); }
+
+.modal-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.modal-body code {
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-size: 13px;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+.code-example {
+  margin-top: 14px;
+  padding: 16px 18px;
+  border: 1px solid rgba(19, 104, 251, 0.35);
+  border-radius: 16px;
+  background: rgba(19, 104, 251, 0.08);
+}
+
+.code-example-title {
+  color: var(--muted-strong);
+  font-size: 13px;
+}
+
+.code-example ul {
+  margin: 10px 0 12px;
+  padding-left: 20px;
+  color: var(--muted-strong);
+  line-height: 1.6;
+}
+
+.code-value {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+
+.code-live {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.code-live strong {
+  color: var(--text);
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: 0.04em;
+}
+
+.modal-actions {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 640px) {
+  .modal { padding: 12px; }
+  .modal-card { padding: 18px; border-radius: 20px; }
+  .modal-head h2 { font-size: 21px; }
+  .code-value { font-size: 24px; }
+  .modal-actions { justify-content: stretch; }
+  .modal-actions .button { flex: 1 1 auto; }
+}
