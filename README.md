@@ -6,9 +6,9 @@ EX2ToolsIV собирает в одном приложении телеметр�
 
 ## Скачать
 
-Актуальная версия - **2.0.8**.
+Актуальная версия - **2.0.11**.
 
-[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.0.8/EX2ToolsIV-2.0.8.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
+[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.0.11/EX2ToolsIV-2.0.11.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
 
 APK занимает около 70 МБ. Устанавливайте только на совместимую прошивку Geely EX2.
 
