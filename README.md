@@ -6,11 +6,19 @@ EX2ToolsIV собирает в одном приложении телеметр�
 
 ## Скачать
 
-Актуальная версия - **2.3.2**.
+Актуальная версия - **2.3.3**.
 
-[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.3.2/EX2ToolsIV-2.3.2.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
+[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.3.3/EX2ToolsIV-2.3.3.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
 
 APK занимает около 81 МБ. Устанавливайте только на совместимую прошивку Geely EX2.
+
+## Что нового в 2.3.3
+
+- Шрифт часов «Как на блокировке»: время в виджетах и оверлее теперь
+  использует тот же `sans-serif-light`, что и экран блокировки.
+- Пункт «Классический» переименован в «Как на блокировке»; «Узкий» не менялся.
+- Исправлено превью шрифта в настройках — теперь оно совпадает с виджетом.
+- Подробнее: [RELEASE_2.3.3.md](https://github.com/mart0722/EX2ToolsIV/blob/main/RELEASE_2.3.3.md).
 
 ## Что нового в 2.3.2
 
