@@ -6,11 +6,19 @@ EX2ToolsIV собирает в одном приложении телеметр�
 
 ## Скачать
 
-Актуальная версия - **2.3.0**.
+Актуальная версия - **2.3.1**.
 
-[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.3.0/EX2ToolsIV-2.3.0.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
+[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.3.1/EX2ToolsIV-2.3.1.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
 
 APK занимает около 81 МБ. Устанавливайте только на совместимую прошивку Geely EX2.
+
+## Что нового в 2.3.1
+
+- Chrome: выбор толщины иконок «Тонкий / Жирный», старый толстый хром восстановлен.
+- Виджет «Режим езды и рекуперация»: уровни рекуперации подсвечиваются
+  зелёным, синим и красным; работает в плавающем виджете и AppWidget,
+  во всех стилях.
+- Подробнее: [RELEASE_2.3.1.md](https://github.com/mart0722/EX2ToolsIV/blob/main/RELEASE_2.3.1.md).
 
 ## Что нового в 2.3.0
 
