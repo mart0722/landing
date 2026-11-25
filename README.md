@@ -6,11 +6,19 @@ EX2ToolsIV собирает в одном приложении телеметр�
 
 ## Скачать
 
-Актуальная версия - **2.3.3**.
+Актуальная версия - **2.3.4**.
 
-[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.3.3/EX2ToolsIV-2.3.3.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
+[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.3.4/EX2ToolsIV-2.3.4.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
 
-APK занимает около 81 МБ. Устанавливайте только на совместимую прошивку Geely EX2.
+APK занимает около 86 МБ. Устанавливайте только на совместимую прошивку Geely EX2.
+
+## Что нового в 2.3.4
+
+- Управление с кнопок руля для прошивок **1025, 1114 и 1121**. Для каждой
+  версии keyserver свой патч: установка, backup и откат.
+- Для 1025 добавлен keyserver `25102118`; вероятнее всего, он же используется
+  на 1111.
+- Подробнее: [RELEASE_2.3.4.md](https://github.com/mart0722/EX2ToolsIV/blob/main/RELEASE_2.3.4.md).
 
 ## Что нового в 2.3.3
 
