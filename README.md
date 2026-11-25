@@ -6,11 +6,19 @@ EX2ToolsIV собирает в одном приложении телеметр�
 
 ## Скачать
 
-Актуальная версия - **2.3.1**.
+Актуальная версия - **2.3.2**.
 
-[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.3.1/EX2ToolsIV-2.3.1.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
+[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.3.2/EX2ToolsIV-2.3.2.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
 
 APK занимает около 81 МБ. Устанавливайте только на совместимую прошивку Geely EX2.
+
+## Что нового в 2.3.2
+
+- Автовключение Wi-Fi при запуске ГУ: пункт под иконкой Wi-Fi, доступен только
+  при включённой иконке. При выключении иконки настройка сбрасывается.
+- Wi-Fi включается после загрузки с повторными попытками. Может мешать
+  беспроводному CarPlay и Android Auto.
+- Подробнее: [RELEASE_2.3.2.md](https://github.com/mart0722/EX2ToolsIV/blob/main/RELEASE_2.3.2.md).
 
 ## Что нового в 2.3.1
 
