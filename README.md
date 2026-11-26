@@ -6,11 +6,20 @@ EX2ToolsIV собирает в одном приложении телеметр�
 
 ## Скачать
 
-Актуальная версия - **2.3.5**.
+Актуальная версия - **2.3.6**.
 
-[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.3.5/EX2ToolsIV-2.3.5.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
+[Скачать APK](https://github.com/mart0722/EX2ToolsIV/releases/download/v2.3.6/EX2ToolsIV-2.3.6.apk) · [Все релизы](https://github.com/mart0722/EX2ToolsIV/releases) · [Подготовка флешки](usb-install.zip)
 
 APK занимает около 86 МБ. Устанавливайте только на совместимую прошивку Geely EX2.
+
+## Что нового в 2.3.6
+
+- Автовключение Wi-Fi: после включения радио приложение запускает поиск сетей
+  и повторяет `startScan` + `reconnect` — каждые 5 секунд первую минуту,
+  затем каждые 15 секунд до 3 минут. Если Wi-Fi уже был включён, но не подключён,
+  поиск всё равно запускается.
+- Остальные изменения — из 2.3.5.
+- Подробнее: [RELEASE_2.3.6.md](https://github.com/mart0722/EX2ToolsIV/blob/main/RELEASE_2.3.6.md).
 
 ## Что нового в 2.3.5
 
